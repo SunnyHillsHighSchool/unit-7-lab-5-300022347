@@ -8,13 +8,66 @@ public class NumberAnalyzer
 {
 	private ArrayList<Number> list;
 
-	//write a constructor
+  //write constructor
+  public NumberAnalyzer(int[] a)
+  {
+    list = new ArrayList<Number>();
+    for(int i:a)
+    {
+      list.add(new Number(i));
+    }
+    
+  }
+  
 
-	//write count odds
+
+  //write count odds
+  public int countOdds()
+  {
+    int oddCount = 0; 
+    for(int i=0; i<list.size() ; i++)
+    {
+      Number currentNum = new Number(i);
+      if(currentNum.isOdd())
+      {
+        oddCount ++;
+      }
+     
+    }
+    return oddCount;
+  }
 
 	//write count evens
 
+  public int countEvens()
+  {
+    int evenCount = 0; 
+    for(int i=0; i<list.size() ; i++)
+    {
+      Number currentNum = new Number(i);
+      if(currentNum.getNum()%2==0)
+      {
+        evenCount ++;
+      }
+     
+    }
+    return evenCount;
+  }
 	//write count perfects
 	
+  public int countPerfects()
+  {
+    int perfectCount = 0; 
+    for(int i=0; i<list.size() ; i++)
+    {
+      Number currentNum = new Number(i);
+      if(currentNum.isPerfect())
+      {
+        perfectCount ++;
+      }
+     
+    }
+    return perfectCount;
+  }
 	//write a toString
 }
