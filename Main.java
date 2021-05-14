@@ -8,7 +8,7 @@ public class Main
 {
 	public static void main( String args[] )
 	{
-		int[] r = { 5, 12, 9, 6, 1, 4, 8, 6};
+		int[] r = { 5, 12, 9, 6, 1, 4, 7, 6};
 		NumberAnalyzer test = new NumberAnalyzer( r );
 		out.println(test);
     

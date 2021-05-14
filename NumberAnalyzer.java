@@ -69,5 +69,18 @@ public class NumberAnalyzer
     }
     return perfectCount;
   }
+
 	//write a toString
+  public String toString()
+  {
+    ArrayList<String> strList = new ArrayList<String>();
+
+    for(Number i:list)
+    {
+      strList.add(Integer.toString(i.getNum()));
+    }
+
+    String finalString = strList.toString();  
+    return finalString;
+  }
 }
